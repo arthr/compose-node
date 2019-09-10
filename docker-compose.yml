@@ -11,8 +11,6 @@ services:
     links:
       - mongo
     command: nodemon -L index.js
-    depends_on:
-      - mongo
   mongo:
     container_name: mongo
     image: mongo
