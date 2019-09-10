@@ -10,7 +10,7 @@ services:
       - .:/app
     links:
       - mongo
-    command: nodemon -L index.js
+    command: npm install && nodemon -L index.js
   mongo:
     container_name: mongo
     image: mongo
